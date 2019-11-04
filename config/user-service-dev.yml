@@ -6,6 +6,12 @@ sp:
 spring:
   application:
     name: user-service
+  rabbitmq:
+    host: 192.168.159.131
+    port: 5672
+    virtualHost: /pd
+    username: admin
+    password: admin
     
 server:
   port: 8101
@@ -15,12 +21,5 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
   
-spring:
-  rabbitmq:
-    host: 192.168.64.140
-    port: 5672
-    virtualHost: /pd
-    username: admin
-    password: admin
 
     
